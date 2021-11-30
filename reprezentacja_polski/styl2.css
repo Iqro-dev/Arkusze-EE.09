@@ -1,0 +1,57 @@
+.banner {
+  color: white;
+  text-align: center;
+  height: 330px;
+}
+
+.game {
+  color: white;
+  text-align: center;
+  width: 170px;
+  padding: 5px;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 15px;
+}
+
+.game:hover {
+  background-color: white;
+  color: black;
+}
+
+.content {
+  color: white;
+}
+
+.left {
+  background-color: whitesmoke;
+  width: 30%;
+  text-align: center;
+  height: 150px;
+  float: left;
+}
+
+.right {
+  background-color: whitesmoke;
+  width: 70%;
+  height: 150px;
+  float: right;
+}
+
+.league {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: seagreen;
+}
+
+h3 {
+  text-align: center;
+  letter-spacing: 6px;
+  text-transform: capitalize;
+}
