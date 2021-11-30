@@ -1,0 +1,57 @@
+.banner {
+  color: white;
+  text-align: center;
+  height: 370px;
+}
+
+.game {
+  color: white;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+}
+
+.game:hover {
+  border-color: white;
+}
+
+.content {
+  background-color: whitesmoke;
+  height: 50px;
+}
+
+.left {
+  background-color: whitesmoke;
+  width: 70%;
+  height: 230px;
+  float: left;
+}
+
+.right {
+  background-color: whitesmoke;
+  width: 30%;
+  height: 230px;
+  text-align: right;
+  float: right;
+}
+
+.games {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+body {
+  font-family: "Tahoma";
+  background-color: crimson;
+}
+
+h2 {
+  text-align: center;
+  letter-spacing: 7px;
+  text-transform: capitalize;
+}
