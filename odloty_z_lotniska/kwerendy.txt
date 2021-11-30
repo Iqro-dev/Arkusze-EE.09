@@ -1,0 +1,4 @@
+SELECT id, nr_rejsu, czas, kierunek, status_lotu FROM odloty ORDER BY czas DESC;
+SELECT MIN(czas) FROM odloty WHERE czas LIKE "10:1%";
+SELECT nr_rejsu, samoloty.linie FROM odloty JOIN samoloty ON odloty.samoloty_id = samoloty.id WHERE kierunek="Malta";
+UPDATE przyloty SET status_lotu = "planowy" WHERE nr_rejsu = "LH9829";
