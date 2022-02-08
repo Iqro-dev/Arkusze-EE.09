@@ -1,0 +1,4 @@
+SELECT nazwa, wystepowanie FROM ryby WHERE styl_zycia="1";
+SELECT Ryby_id, wymiar_ochronny FROM Okres_ochronny WHERE wymiar_ochronny < 50;
+SELECT nazwa, Lowisko.akwen, Lowisko.wojewodztwo FROM Ryby JOIN Lowisko ON Ryby.id = Ryby_id WHERE rodzaj="2";
+ALTER TABLE ryby ADD dobowy_limit INT;
