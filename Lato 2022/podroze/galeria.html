@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styl7.css">
+  <title>Galeria</title>
+</head>
+<body>
+  <div class="banner">
+    <h2>Galeria miejsc ciekawych</h2>
+  </div>
+
+  <div class="main">
+    <img src="lanzarotte.jpg" alt="galeria" id="main"/>
+  </div>
+
+  <div>
+    <div class="left">
+      <h3>Przeglądaj zdjęcia</h3>
+      <img src="lanzarotte.jpg" alt="galeria" id="lanzarotte" onclick="Change('lanzarotte')"/>
+      <img src="pekin.jpg" alt="galeria" id="pekin" onclick="Change('pekin')"/>
+      <img src="serengeti.jpg" alt="galeria" id="serengeti" onclick="Change('serengeti')"/>
+      <img src="wenecja.jpg" alt="galeria" id="wenecja" onclick="Change('wenecja')"/>
+      <img src="tajlandia.jpg" alt="galeria" id="tajlandia" onclick="Change('tajlandia')"/>
+    </div>
+
+    <div class="right">
+      <h3>Obrazy w naszej galerii</h3>
+      <table border="1">
+        <tr><td>Europa</td><td>Azja</td><td>Afryka</td></tr>
+        <tr><td>2</td><td>2</td><td>1</td></tr>
+      </table>
+      <p>Polub nas <img src="icon-off.png" id="icon" onclick="Like();"/></p>
+      <a href="https://pixabay.com" target="_blank">Odkryj więcej zdjęć</a>
+    </div>
+  </div>
+  <script>
+    var licznik=0;
+    function Like() {
+      licznik++;
+        if (licznik%2!=0)
+        {
+          document.getElementById("icon").src="icon-on.png";
+        }
+        else
+        {
+          document.getElementById("icon").src="icon-off.png";
+        }
+    }
+
+    function Change(name) {
+      document.getElementById('main').src = `${name}.jpg`
+    }
+    
+  </script>
+
+  <div class="footer">Autor:498372432432</div>
+</body>
+
+</html>
+
